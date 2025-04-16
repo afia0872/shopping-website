@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Ecommerce</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+        rel="stylesheet"
+      />
+      <body>
+          <nav class="bg-white shadow-md sticky top-0 z-50 p-3">
+              <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+                <!-- Logo/Brand -->
+                <div><a href="./index.html" class="text-xl font-bold">Ecommerce</a></div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-4">
+                  <a class="text-gray-700 hover:text-gray-900" href="./index.html">Home</a>
+                  <a class="text-gray-700 hover:text-gray-900" href="./product.html">Products</a>
+                  <a class="text-gray-700 hover:text-gray-900" href="./abt.html">About</a>
+                  <a class="text-gray-700 hover:text-gray-900" href="./contact.html">Contact</a>
+                </div>
+                
+                <!-- Desktop Auth/Cart -->
+                <div class="hidden md:flex space-x-4">
+                  <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900" href="./login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+                  <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900" href="./register.html"><i class="fas fa-user-plus"></i>Register</a>
+                  <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900" href="./cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    Cart
+                  </a>
+                </div>
+              
+            </nav>
+           <section class="flex items-center justify-center min-h-screen bg-gray-100">
+              <div class="w-full max-w-md p-8 space-y-6 bg-white rounded shadow-md">
+                  <h1 class="text-3xl font-bold text-center">Contact Us</h1>
+                  <form class="space-y-4">
+                      <div>
+                          <label for="name" class="block text-sm font-medium text-gray-700" requried></label>
+                          <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      </div>
+                      <div>
+                          <label for="email" class="block text-sm font-medium text-gray-700" requried></label>
+                          <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      </div>
+                      <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700" requried></label>
+                        <input type="tel" id="phone" placeholder="Phone no" maxlength="10" class="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      </div>
+                      <div>
+                          <label for="message" class="block text-sm font-medium text-gray-700" requried >How can we help you?</label>
+                          <textarea id="message" name="message" rows="4" placeholder="Enter your message" class="w-full px-3 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                      </div>
+                      <div class="flex justify-center">
+                          <button type="submit" class="px-4 py-2 font-medium text-white bg-red-600 rounded-pill-md hover:bg-gray-700">Send</button>
+                      </div>
+                  </form>
+              </div>
+           </section>
+           <footer class=" text-center">
+            <h6>made by Afia with <u class="text-secondary font-blod">AchieversIT Teams</u></h6>
+          </footer>
+                 
+            <script src="./project.js"></script>
+      </body>
+  </html>
+  

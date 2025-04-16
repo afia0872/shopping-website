@@ -1,0 +1,115 @@
+<html>
+    <head>
+    <title>Ecommerce</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+  rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="product.css">
+  
+</head>
+<body>
+    <nav class="bg-white shadow-md sticky top-0 z-50 p-3">
+        <div
+          class="container mx-auto px-4 py-2 flex justify-between items-center"
+        > <!-- Logo/Brand -->
+        <div>
+          <a href="./index.html" class="text-xl font-bold">Ecommerce</a>
+        </div>
+
+        <!--  Navigation -->
+        <div class="hidden md:flex space-x-4">
+          <a class="text-gray-700 hover:text-gray-900" href="./index.html"
+            >Home</a
+          >
+          <a
+            class="text-gray-700 hover:text-gray-900"
+            href="./product.html"
+            >Products</a
+          >
+          <a class="text-gray-700 hover:text-gray-900" href="./abt.html"
+            >About</a
+          >
+          <a class="text-gray-700 hover:text-gray-900" href="./contact.html"
+            >Contact</a
+          >
+        </div>
+
+        <!-- cart  and register page-->
+        <div class="">
+        <div class="hidden md:flex space-x-4 ">
+          <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900" href="./login.html"
+            ><i class="fas fa-sign-in-alt"></i>Login</a
+          >
+          <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900"
+            href="./register.html"
+            ><i class="fas fa-user-plus"></i>Register</a
+          >
+          <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900" href="./cart.html">
+            <i class="fas fa-shopping-cart "></i>Cart </a>
+        </div>
+      </div>
+    </nav>
+
+    
+    <div id="category-buttons">
+    <main class="container mx-auto px-4 py-8" id="productSection">
+      <h2 class="text-2xl font-bold text-center mb-4">Latest Products</h2>
+      <hr>
+      <div class="flex justify-center space-x-4 mb-8">
+        <button
+          onclick="filterProducts('all')"
+          class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 transition"
+        >
+          All
+        </button>
+        <button
+          onclick="filterProducts(`men's clothing`)"
+          class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 transition"
+        >
+          Men's Clothing
+        </button>
+        <button
+          onclick="filterProducts(`women's clothing`)"
+          class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 transition"
+        >
+          Women's Clothing
+        </button>
+        <button
+          onclick="filterProducts('jewelery')"
+          class="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300 transition"
+        >
+          Jewelery
+        </button>
+        <button
+            onclick="filterProducts('electronics')"
+            class="px-4 py-2 bg-gray-200 rounded "
+          >
+            Electronics
+          </button>
+      </div>
+
+      <!-- cards are displayed which the help of belowe code  -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8"
+        id="products-container"
+      >
+        <!-- Products will be inserted here by JavaScript -->
+      </div>
+    </div>
+    </main>
+
+    <footer class=" text-center">
+      <h6>made by Afia with <u class="text-secondary font-blod">AchieversIT Teams</u></h6>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>

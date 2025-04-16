@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="product.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-white shadow-md sticky top-0 z-50 p-3">
+      <div
+        class="container mx-auto px-4 py-2 flex justify-between items-center"
+      >
+        <!-- Logo/Brand -->
+        <div>
+          <a href="./index.html" class="text-xl font-bold">Ecommerce</a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-4">
+          <a class="text-gray-700 hover:link-dark-900" href="./index.html"
+            >Home</a
+          >
+          <a
+            class="text-gray-700 hover:text-dark-900"
+            href="./product.html"
+            >Products</a
+          >
+          <a class="text-gray-700 hover:text-dark-900" href="./abt.html"
+            >About</a
+          >
+          <a class="text-gray-700 hover:text-dark-900" href="./contact.html"
+            >Contact</a
+          >
+        </div>
+
+        <!-- cart and registration page -->
+        <div class="hidden md:flex space-x-4">
+          <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900" href="./login.html"
+            ><i class="fas fa-sign-in-alt"></i>Login</a>
+          <a
+            class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900"
+            href="./register.html"
+            ><i class="fas fa-user-plus"></i>Register</a>
+          <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900" href="./cart.html">
+            <i class="fas fa-shopping-cart"></i>Cart</a>
+        </div>
+    </nav>
+
+    <header class="relative">
+      <img
+        alt="home-page"
+        class=" object-cover"
+        height="80px"
+        src="/image/main.png.jpg"
+        width="100%"
+      />
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+      >
+        <div class="text-center text-white">
+          <h1 class="text-4xl font-bold">New Season Arrivals</h1>
+          <p class="mt-2">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+        </div>
+      </div>
+    </header>
+    <div id="category-buttons">
+      <main class="container mx-auto px-4 py-8" id="productSection">
+        <h2 class="text-2xl font-bold text-center mb-4">Latest Products</h2>
+        <hr>
+        <div class="flex justify-center space-x-4 mb-8">
+          <button
+            onclick="filterProducts('all')"
+            class="px-4 py-2 bg-gray-200 rounded "
+          >
+            All
+          </button>
+          <button
+            onclick="filterProducts(`men's clothing`)"
+            class="px-4 py-2 bg-gray-200 rounded "
+          >
+            Men's Clothing
+          </button>
+          <button
+            onclick="filterProducts(`women's clothing`)"
+            class="px-4 py-2 bg-gray-200 rounded "
+          >
+            Women's Clothing
+          </button>
+          <button
+            onclick="filterProducts('jewelery')"
+            class="px-4 py-2 bg-gray-200 rounded "
+          >
+            Jewelery
+          </button>
+          <button
+            onclick="filterProducts('electronics')"
+            class="px-4 py-2 bg-gray-200 rounded "
+          >
+            Electronics
+          </button>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8"
+          id="products-container"
+        >
+          <!-- Products will be inserted here by JavaScript -->
+        </div>
+      </div>
+      </main>
+  <footer class=" text-center">
+    <h6>made by Afia with <u class="text-secondary font-blod">AchieversIT Teams</u></h6>
+  </footer>
+    
+  
+      <script src="project.js"></script>
+  </body>
+  </html>

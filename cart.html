@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="product.css">
+  </head>
+  <body>
+    <nav class="bg-white shadow-md sticky top-0 z-50 p-3">
+      <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+        <!-- Logo/Brand -->
+        <div><a href="./index.html" class="text-xl font-bold">Ecommerce</a></div>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-4">
+          <a class="text-gray-700 hover:text-gray-900" href="./index.html">Home</a>
+          <a class="text-gray-700 hover:text-gray-900" href="./product.html">Products</a>
+          <a class="text-gray-700 hover:text-gray-900" href="./abt.html">About</a>
+          <a class="text-gray-700 hover:text-gray-900" href="./contact.html">Contact</a>
+        </div>
+        
+        <!-- Desktop cart and registration page -->
+        <div class="hidden md:flex space-x-4">
+          <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900" href="./login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+          <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900" href="./register.html"><i class="fas fa-user-plus"></i>Register</a>
+          <a class="border border-dark bg-gray-100 text-gray-900 text p-2 hover:text-red-900" href="./cart.html">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+    </nav>
+    <section class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <div class="w-full max-w-4xl p-4 bg-white shadow-md rounded-md">
+        <h1 class="text-3xl font-bold text-center mb-4">Your Shopping Cart</h1>
+        <hr class="mb-8">
+        <div id="cart-container" class="p-4">
+          <!-- Cart items will be rendered here by JavaScript -->
+        </div>
+      </div>
+    </section>
+    <footer class=" text-center">
+      <h6>made by Afia with <u class="text-secondary font-blod">AchieversIT Teams</u></h6>
+    </footer>
+    <script src="./project.js"></script>
+  </body>
+</html>
