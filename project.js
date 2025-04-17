@@ -32,19 +32,19 @@ function renderProducts(products) {
 
   products.forEach((product) => {
     const shortTitle =
-      product.title.length > 15
-        ? product.title.substring(0, 15) + "..."
+      product.title.length > 10
+        ? product.title.substring(0, 10) + "..."
         : product.title;
 
     const shortDescription =
-      product.description.length > 100
-        ? product.description.substring(0, 100) + "..."
+      product.description.length > 90
+        ? product.description.substring(0, 90) + "..."
         : product.description;
 
     const productElement = document.createElement("div");
-    productElement.className = "border rounded-lg p-4 flex flex-col  width:1200px";
+    productElement.className = "border rounded-lg  p-4 flex flex-col";
     productElement.innerHTML = `
-      <img alt="${product.title}" class="w-full h-48 object-cover mb-4" height="200" src="${product.image}" width="200"/>
+      <img alt="${product.title}" class="w-full h-48 object-cover"  src="${product.image}"/>
       <h3 class="text-lg text-center font-bold">${shortTitle}</h3>
       <p class="text-gray-600 mb-2 truncate-1-lines">${shortDescription}</p><hr>
       <p class="text-xl  text-center font-bold mb-2">$${product.price}</p><hr>
